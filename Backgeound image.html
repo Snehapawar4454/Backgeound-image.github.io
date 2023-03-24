@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+       .heading1::before{
+         content: 'IMAGE';
+         background-color: red;
+         color:yellow;
+        }
+
+        .heading1::after{
+            content: 'ITs';
+            background-color: aqua;
+            color: blueviolet;
+        }
+
+        .main{
+            height: 100vh;
+            width: 100vw;
+            color: aliceblue;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5RrW0L4AQPCeN9iOtELIXPvZyU_JYSz0Aw&usqp=CAU');
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            height: 99.5vh;
+            width:99.8vw;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        .main h1{
+
+            position: absolute;
+            font-size: 5rem;
+            color: rgb(232, 216, 216);
+        }
+
+
+
+</style>
+<body>
+    <div class="main"> 
+        <h1 class"heading1">HELLO THIS IS BACKGROUND IMAGE WITH TEXT</h1>
+
+    </div>
+</body>
+</html>
